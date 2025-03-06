@@ -1,0 +1,159 @@
+.terminal-section {
+    padding: 3rem 0;
+    background-color: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.terminal-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.terminal-header {
+    background-color: #333;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.terminal-title {
+    color: #fff;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.terminal-title i {
+    color: #3498db;
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.control-close {
+    background-color: #ff5f56;
+}
+
+.control-minimize {
+    background-color: #ffbd2e;
+}
+
+.control-maximize {
+    background-color: #27c93f;
+}
+
+.terminal-body {
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    color: #f8f8f2;
+    line-height: 1.5;
+}
+
+.terminal-output {
+    margin-bottom: 10px;
+}
+
+.terminal-prompt {
+    color: #3498db;
+    margin-right: 8px;
+}
+
+.terminal-command {
+    color: #f8f8f2;
+}
+
+.terminal-response {
+    color: #a9b7c6;
+    padding-left: 20px;
+    margin-top: 5px;
+    white-space: pre-wrap;
+}
+
+.terminal-input-line {
+    display: flex;
+    margin-top: 10px;
+}
+
+.terminal-input {
+    background: transparent;
+    border: none;
+    color: #f8f8f2;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    caret-color: #3498db;
+}
+
+.terminal-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: #3498db;
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.typing {
+    animation: typing 0.05s steps(1);
+}
+
+@keyframes typing {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.command-help {
+    color: #27c93f;
+}
+
+.command-error {
+    color: #ff5f56;
+}
+
+.command-info {
+    color: #3498db;
+}
+
+.command-warning {
+    color: #ffbd2e;
+}
+
+.command-success {
+    color: #27c93f;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .terminal-container {
+        max-width: 90%;
+    }
+    
+    .terminal-body {
+        height: 250px;
+    }
+}

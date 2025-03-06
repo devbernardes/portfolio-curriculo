@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Portfólio</div>
+            <button class="mobile-menu-btn" aria-label="Menu de navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="about.html" class="nav-link">Sobre</a></li>
+                <li><a href="skills.html" class="nav-link">Habilidades</a></li>
+                <li><a href="projects.html" class="nav-link active">Projetos</a></li>
+                <li><a href="contact.html" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/devbernardes" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabriesbernardes/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:gabriel.original2001@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-hero">
+            <div class="container">
+                <h1 data-aos="fade-up">Meus Projetos</h1>
+                <p class="projects-intro" data-aos="fade-up" data-aos-delay="100">
+                    Conheça alguns dos projetos que desenvolvi utilizando diversas tecnologias web.
+                    Cada projeto representa um desafio único e uma oportunidade de aprendizado.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects-filter">
+            <div class="container">
+                <div class="filter-container" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="html">HTML/CSS</button>
+                    <button class="filter-btn" data-filter="js">JavaScript</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-gallery">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Projeto 1 -->
+                    <div class="project-card" data-category="html js" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="assets/images/amigo-secreto.png" alt="Projeto Amigo Secreto">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/devbernardes/challenge-amigo-secreto" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
+                                    <a href="https://challenge-amigo-secreto-amber-chi.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="view-links-btn">
+                                <i class="fas fa-external-link-alt"></i> Ver Links
+                            </button>
+                        </div>
+                        <div class="project-info">
+                            <h3>Amigo Secreto</h3>
+                            <p>Aplicação para sorteio de amigo secreto com funcionalidades de adicionar, remover participantes e realizar o sorteio.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2 -->
+                    <div class="project-card" data-category="html" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="assets/images/foto-portfolio-previa.png" alt="Portfolio Preview">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/devbernardes/projeto-portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
+                                    <a href="https://portfolio-gabriel-chi.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="view-links-btn">
+                                <i class="fas fa-external-link-alt"></i> Ver Links
+                            </button>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Pessoal</h3>
+                            <p>Site de portfolio pessoal com seções para apresentação, habilidades, projetos e contato.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3 -->
+                    <div class="project-card" data-category="html js" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="assets/images/game-numero-secreto.png" alt="Jogo do Número Secreto">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/devbernardes/Game-Numero-Secreto" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
+                                    <a href="https://jogo-do-numero-secreto-zeta-blue.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="view-links-btn">
+                                <i class="fas fa-external-link-alt"></i> Ver Links
+                            </button>
+                        </div>
+                        <div class="project-info">
+                            <h3>Jogo do Número Secreto</h3>
+                            <p>Jogo interativo onde o jogador deve adivinhar um número secreto com feedback por voz e dicas.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <p>&copy; 2025 devbernardes - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Inicializar AOS na página de projetos
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+
+            // Funcionalidade de filtro de projetos
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remover classe active de todos os botões
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adicionar classe active ao botão clicado
+                    button.classList.add('active');
+                    
+                    // Filtrar projetos
+                    const filter = button.getAttribute('data-filter');
+                    
+                    projectCards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            const categories = card.getAttribute('data-category').split(' ');
+                            if (categories.includes(filter)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Funcionalidade para mostrar/esconder os links dos projetos
+            projectCards.forEach(card => {
+                const viewLinksBtn = card.querySelector('.view-links-btn');
+                const projectOverlay = card.querySelector('.project-overlay');
+                
+                // Evento de clique no botão "Ver Links"
+                viewLinksBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    projectCards.forEach(c => {
+                        if (c !== card) {
+                            c.classList.remove('active');
+                            c.querySelector('.project-overlay').style.opacity = '';
+                            c.querySelector('.project-overlay').style.visibility = '';
+                        }
+                    });
+                    
+                    // Toggle da visibilidade do overlay
+                    const isActive = card.classList.contains('active');
+                    card.classList.toggle('active');
+                    
+                    // Use CSS classes instead of inline styles
+                    if (isActive) {
+                        projectOverlay.style.opacity = '';
+                        projectOverlay.style.visibility = '';
+                    } else {
+                        projectOverlay.style.opacity = '1';
+                        projectOverlay.style.visibility = 'visible';
+                    }
+                });
+                
+                // Fechar overlay ao clicar fora
+                document.addEventListener('click', (e) => {
+                    if (!card.contains(e.target)) {
+                        card.classList.remove('active');
+                        projectOverlay.style.opacity = '';
+                        projectOverlay.style.visibility = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

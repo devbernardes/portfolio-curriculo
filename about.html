@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Portfólio</div>
+            <button class="mobile-menu-btn" aria-label="Menu de navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="about.html" class="nav-link active">Sobre</a></li>
+                <li><a href="skills.html" class="nav-link">Habilidades</a></li>
+                <li><a href="projects.html" class="nav-link">Projetos</a></li>
+                <li><a href="contact.html" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/devbernardes" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabriesbernardes/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:gabriel.original2001@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Sobre Mim</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - Presente</div>
+                            <h3>Desenvolvedor iniciante</h3>
+                            <p>Estudando e desenvolvendo projetos com foco em tecnologias front-end modernas.</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h3>Oracle Next Education</h3>
+                            <p>Participante do programa ONE, desenvolvendo habilidades em programação web.</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                     <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h3>Cursos Introdutórios ONE</h3>
+                            <p>Conclusão dos primeiros cursos em programação e softskills na alura com parceria oracle, estabelecendo uma base sólida para minha carreira em desenvolvimento.</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+
+                <div class="interests-section">
+                    <h3 data-aos="fade-up">Interesses</h3>
+                    <div class="interests-grid">
+                        <div class="interest-item" data-aos="zoom-in">
+                            <i class="fas fa-code interest-icon"></i>
+                            <p>Desenvolvimento Web</p>
+                        </div>
+                        <div class="interest-item" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fas fa-mobile-alt interest-icon"></i>
+                            <p>Design Responsivo</p>
+                        </div>
+                        <div class="interest-item" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-paint-brush interest-icon"></i>
+                            <p>UI/UX Design</p>
+                        </div>
+                        <div class="interest-item" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="fas fa-brain interest-icon"></i>
+                            <p>Aprendizado Contínuo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <p>&copy; 2025 devbernardes - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Inicializar AOS na página about
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        });
+    </script>
+</body>
+</html>

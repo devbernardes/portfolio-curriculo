@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Gabriel - Desenvolvedor Front-end">
+    <meta name="keywords" content="desenvolvedor, front-end, portfolio, web development">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/featured-projects.css">
+    <link rel="stylesheet" href="assets/css/terminal.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Portfólio</div>
+            <button class="mobile-menu-btn" aria-label="Menu de navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="about.html" class="nav-link">Sobre</a></li>
+                <li><a href="skills.html" class="nav-link">Habilidades</a></li>
+                <li><a href="projects.html" class="nav-link">Projetos</a></li>
+
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/devbernardes" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabriesbernardes/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:gabriel.original2001@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <link rel="stylesheet" href="assets/css/home.css">
+        <section class="hero-section">
+            <div class="particles" id="particles"></div>
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="typing-text" id="typing-text">Gabriel Bernardes</h1>
+                <p class="tagline">Desenvolvedor Estudante | Criando Experiências Web</p>
+                <div class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                    <p>Transformando ideias em experiências digitais memoráveis com código limpo e design intuitivo.</p>
+                </div>
+                
+                <div class="terminal-container hero-terminal" data-aos="fade-up" data-aos-delay="400">
+                    <div class="terminal-header">
+                        <div class="terminal-title">
+                            <i class="fas fa-terminal"></i>
+                            <span>gabriel@portfolio:~</span>
+                        </div>
+                        <div class="terminal-controls">
+                            <div class="terminal-control control-minimize"></div>
+                            <div class="terminal-control control-maximize"></div>
+                            <div class="terminal-control control-close"></div>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <!-- Terminal output will be added here by JavaScript -->
+                    </div>
+                    <form id="terminal-form" class="terminal-input-line">
+                        <span class="terminal-prompt">gabriel@portfolio:~$</span>
+                        <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" autofocus>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="fade-up">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Projetos Concluídos</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Meses de Experiência Ativa</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Tecnologias em Aprendizado</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Certificações</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <div class="container">
+                <h2 data-aos="fade-up">Projetos em Destaque</h2>
+                <div class="featured-projects-grid">
+                    <div class="featured-project-card" data-aos="fade-up">
+                        <div class="featured-project-image">
+                            <img src="./assets/images/amigo-secreto.png" alt="Amigo Secreto" loading="lazy">
+                        </div>
+                        <div class="featured-project-content">
+                            <h3 class="featured-project-title">Amigo Secreto</h3>
+                            <p class="featured-project-description">Aplicação web interativa para o tradicional jogo de Amigo Secreto, com autenticação por senha e sorteio manual entre participantes.</p>
+                            <div class="featured-project-tech">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                            <div class="featured-project-links">
+                                <a href="https://github.com/devbernardes/challenge-amigo-secreto" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://challenge-amigo-secreto-amber-chi.vercel.app/" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="featured-project-image">
+                            <img src="./assets/images/foto-portfolio-previa.png" alt="Projeto Portfolio" loading="lazy">
+                        </div>
+                        <div class="featured-project-content">
+                            <h3 class="featured-project-title">Projeto Portfolio</h3>
+                            <p class="featured-project-description">Primeira página web criada utilizando HTML e CSS, focada em entender a estrutura básica e estilização de elementos para uma interface simples e funcional.</p>
+                            <div class="featured-project-tech">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                            </div>
+                            <div class="featured-project-links">
+                                <a href="https://github.com/devbernardes/projeto-portfolio" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://portfolio-gabriel-chi.vercel.app/" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <p>&copy; 2025 devbernardes - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/terminal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

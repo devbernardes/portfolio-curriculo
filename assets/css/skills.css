@@ -1,0 +1,322 @@
+:root {
+    --skill-card-padding: 30px;
+    --skill-icon-size: 60px;
+    --progress-height: 10px;
+    --progress-radius: 5px;
+    --soft-skill-icon-size: 50px;
+    --learning-icon-size: 45px;
+}
+
+/* Hero Section */
+.skills-hero {
+    padding: 120px 0 60px;
+    background-color: var(--bg-secondary);
+    text-align: center;
+}
+
+.skills-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.skills-intro {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Skills Categories Section */
+.skills-categories {
+    padding: 60px 0;
+    background-color: var(--bg-primary);
+}
+
+.skills-categories h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: var(--text-primary);
+}
+
+.section-title {
+    margin-top: 60px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.skill-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--card-shadow);
+    padding: var(--skill-card-padding);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px var(--card-shadow);
+}
+
+.skill-icon {
+    font-size: var(--skill-icon-size);
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.skill-level {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.skill-progress {
+    height: var(--progress-height);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--progress-radius);
+    overflow: hidden;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.skill-progress-bar {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: var(--progress-radius);
+    transition: width 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+}
+
+.skill-level span {
+    align-self: flex-end;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.skill-card p {
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.skill-details {
+    list-style-type: none;
+    padding: 0;
+    margin-top: auto;
+}
+
+.skill-details li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: var(--text-secondary);
+}
+
+.skill-details li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Soft Skills Section */
+.soft-skills {
+    padding: 60px 0;
+    background-color: var(--bg-secondary);
+}
+
+.soft-skills h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: var(--text-primary);
+}
+
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.soft-skill-item {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--card-shadow);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.soft-skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.soft-skill-icon {
+    font-size: var(--soft-skill-icon-size);
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.soft-skill-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.soft-skill-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Learning Path Section */
+.learning-path {
+    padding: 60px 0;
+    background-color: var(--bg-primary);
+}
+
+.learning-path h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: var(--text-primary);
+}
+
+.learning-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: var(--text-secondary);
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.learning-item {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--card-shadow);
+    padding: 30px;
+    text-align: center;
+}
+
+.learning-icon {
+    font-size: var(--learning-icon-size);
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.learning-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.learning-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learning-bar {
+    width: 100%;
+    height: var(--progress-height);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--progress-radius);
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.learning-fill {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: var(--progress-radius);
+    transition: width 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+}
+
+.learning-progress span {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .skills-grid,
+    .soft-skills-grid,
+    .learning-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .skills-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid,
+    .soft-skills-grid,
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-hero {
+        padding: 100px 0 40px;
+    }
+    
+    .skills-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .skills-intro {
+        font-size: 1rem;
+    }
+    
+    .skills-categories h2,
+    .soft-skills h2,
+    .learning-path h2 {
+        font-size: 1.8rem;
+    }
+    
+    .skill-card,
+    .soft-skill-item,
+    .learning-item {
+        padding: 20px;
+    }
+}
+
+/* Animation for skill bars on page load */
+@keyframes fillBar {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Remove the animation from CSS since we're handling it with JavaScript */
+/* The JavaScript in skills.js will handle the animation timing and width values */
