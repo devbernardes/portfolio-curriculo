@@ -1,5 +1,16 @@
 blank_issues_enabled: false
 contact_links:
   - name: Dúvidas e Discussões
-    url: https://github.com/gabrieldeori/PORTFOLIO/discussions
+    url: https://github.com/devbernardes/PORTFOLIO/discussions
     about: Por favor, use as Discussões para perguntas e conversas gerais
+
+# Configuração dos templates de issues
+templates:
+  - name: Bug Report
+    about: Reporte um problema ou erro encontrado
+    filename: bug_report.md
+    labels: [bug]
+  - name: Solicitação de Funcionalidade
+    about: Sugira uma ideia ou recurso para este projeto
+    filename: feature_request.md
+    labels: [enhancement]
