@@ -91,10 +91,6 @@ O site é totalmente responsivo e otimizado para:
 - Tablet (768px a 1199px)
 - Celular (abaixo de 768px)
 
-## 🤝 Contribuindo
-
-Contribuições, problemas e solicitações de recursos são bem-vindos! Sinta-se à vontade para verificar a [página de issues](https://github.com/seunomedeusuario/portfolio/issues).
-
 ## 📝 Licença
 
 Este projeto está licenciado sob [MIT](https://choosealicense.com/licenses/mit/).
@@ -102,9 +98,9 @@ Este projeto está licenciado sob [MIT](https://choosealicense.com/licenses/mit/
 ## 📬 Contato
 
 Para quaisquer perguntas ou feedback, entre em contato através de:
-- Email: seu.email@exemplo.com
-- LinkedIn: [Seu Nome](https://linkedin.com/in/seuperfil)
-- GitHub: [@seunomedeusuario](https://github.com/seunomedeusuario)
+- Email: gabriel.original2001@gmail.com
+- LinkedIn: [gabrielsbernardes](hhttps://www.linkedin.com/in/gabriesbernardes/)
+- GitHub: [@devbernardes](https://github.com/devbernardes)
 
 ---
 
