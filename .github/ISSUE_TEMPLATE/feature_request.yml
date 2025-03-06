@@ -1,0 +1,90 @@
+name: ✨ Solicitação de Funcionalidade
+description: Sugira uma ideia ou recurso para melhorar o projeto
+title: "[FEATURE]: "
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Obrigado por contribuir com ideias para melhorar este projeto!
+        Por favor, preencha os campos abaixo para nos ajudar a entender sua sugestão.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema Relacionado
+      description: Sua solicitação de funcionalidade está relacionada a um problema? Por favor, descreva.
+      placeholder: Fico frustrado quando tento fazer X e Y acontece...
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução Desejada
+      description: Descreva a solução que você gostaria de ver implementada
+      placeholder: Gostaria que houvesse uma forma de fazer X que resultasse em Z...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas Consideradas
+      description: Descreva alternativas que você considerou para resolver o problema
+      placeholder: Também pensei em implementar A ou B, mas...
+      render: markdown
+    validations:
+      required: false
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impacto da Funcionalidade
+      description: Qual seria o impacto desta funcionalidade para os usuários?
+      multiple: false
+      options:
+        - Pequeno (melhoria de conveniência)
+        - Médio (melhoria significativa na experiência)
+        - Grande (transformaria completamente a experiência)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade Sugerida
+      description: Qual você acredita que deveria ser a prioridade desta funcionalidade?
+      multiple: false
+      options:
+        - Baixa (seria bom ter)
+        - Média (melhoraria significativamente a experiência)
+        - Alta (essencial para o uso adequado)
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto Adicional
+      description: Adicione qualquer outro contexto, capturas de tela ou exemplos sobre a solicitação
+      placeholder: Esta funcionalidade seria útil para...
+      render: markdown
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmações
+      description: Por favor, confirme o seguinte antes de enviar
+      options:
+        - label: Verifiquei que não existe uma solicitação similar já aberta
+          required: true
+        - label: Esta é uma solicitação de funcionalidade e não um relatório de bug
+          required: true
+        - label: Forneci detalhes suficientes para que a equipe entenda minha sugestão
+          required: true

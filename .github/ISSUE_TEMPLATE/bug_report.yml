@@ -1,0 +1,114 @@
+name: 🐛 Relatório de Bug
+description: Reporte um problema ou erro encontrado no projeto
+title: "[BUG]: "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🙏 Obrigado por dedicar seu tempo para preencher este relatório de bug!
+        Por favor, preencha todos os campos necessários para que possamos resolver o problema rapidamente.
+
+  - type: input
+    id: description
+    attributes:
+      label: Descrição Rápida
+      description: Uma descrição curta e objetiva do bug encontrado
+      placeholder: Ex. O menu não aparece quando clico no botão de navegação
+    validations:
+      required: true
+
+  - type: textarea
+    id: detailed-description
+    attributes:
+      label: Descrição Detalhada
+      description: Forneça detalhes adicionais sobre o problema
+      placeholder: Explique com mais detalhes o que está acontecendo...
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Passos para Reproduzir
+      description: Como podemos reproduzir este problema?
+      placeholder: |
+        1. Vá para '...'
+        2. Clique em '...'
+        3. Role até '...'
+        4. Veja o erro
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento Esperado
+      description: O que você esperava que acontecesse?
+      placeholder: A página deveria carregar normalmente mostrando...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Navegadores
+      description: Em quais navegadores você encontrou este problema?
+      multiple: true
+      options:
+        - Google Chrome
+        - Mozilla Firefox
+        - Safari
+        - Microsoft Edge
+        - Opera
+        - Brave
+        - Outro (especifique nos detalhes adicionais)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema Operacional
+      description: Em qual sistema operacional você encontrou este problema?
+      multiple: false
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - iOS
+        - Android
+        - Outro (especifique nos detalhes adicionais)
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Capturas de Tela
+      description: Se aplicável, adicione capturas de tela para ajudar a explicar o problema
+      placeholder: Você pode arrastar e soltar imagens aqui...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações Adicionais
+      description: Adicione qualquer outra informação sobre o problema aqui
+      placeholder: Versão do sistema operacional, detalhes do dispositivo, etc.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmações
+      description: Por favor, confirme o seguinte antes de enviar
+      options:
+        - label: Eu verifiquei que não existe um relatório similar já aberto
+          required: true
+        - label: Eu testei em mais de um navegador/dispositivo (se aplicável)
+          required: false
