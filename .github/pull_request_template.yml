@@ -1,0 +1,74 @@
+name: Pull Request Template
+description: Template for creating pull requests
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir! Por favor, preencha as informações abaixo.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Por favor, forneça uma descrição detalhada das alterações realizadas
+      placeholder: Descreva suas alterações...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: Tipo de Alteração
+      description: Que tipo de alteração este PR introduz?
+      options:
+        - Feature (nova funcionalidade)
+        - Bug fix (correção de bug)
+        - Documentation (documentação)
+        - Style (formatação, faltando ponto e vírgula, etc)
+        - Refactor (refatoração de código)
+        - Performance (melhorias de performance)
+        - Test (adição ou correção de testes)
+        - Build (alterações no processo de build)
+        - CI (alterações na configuração do CI)
+        - Chore (outras alterações que não modificam src ou test)
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testes
+      description: Descreva os testes que você executou
+      placeholder: |
+        1. Quais testes foram executados?
+        2. Como reproduzir os testes?
+        3. Instruções específicas?
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Capturas de Tela
+      description: Se aplicável, adicione capturas de tela para ajudar a explicar suas alterações
+      placeholder: Arraste e solte as imagens aqui...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Antes de submeter o PR, por favor verifique se você completou os seguintes itens
+      options:
+        - label: Meu código segue o estilo de código deste projeto
+          required: true
+        - label: Realizei uma auto-revisão do meu código
+          required: true
+        - label: Comentei meu código, particularmente em áreas difíceis de entender
+          required: true
+        - label: Fiz as alterações correspondentes na documentação
+          required: true
+        - label: Minhas alterações não geram novos warnings
+          required: true
+        - label: Adicionei testes que provam que minha correção é efetiva ou que minha feature funciona
+          required: true
+        - label: Testes unitários novos e existentes passam localmente com minhas alterações
+          required: true
