@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Quando o usuário termina o toque
         link.addEventListener('touchend', function (e) {
+            // Armazena o href para navegação posterior
+            const href = this.getAttribute('href');
+
             // Pequeno atraso para permitir que o feedback visual seja visto
             setTimeout(() => {
                 // Remove o background azul
@@ -47,6 +50,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 setTimeout(() => {
                     this.classList.remove('reset-state');
                 }, 50);
+
+                // Navega para o link após o efeito visual
+                if (href) {
+                    // Verifica se é para abrir em nova aba
+                    if (this.getAttribute('target') === '_blank') {
+                        window.open(href, '_blank');
+                    } else {
+                        window.location.href = href;
+                    }
+                }
             }, 300); // Tempo suficiente para o usuário ver o feedback visual
         });
     });
