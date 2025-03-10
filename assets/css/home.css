@@ -167,3 +167,17 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Additional media query for smaller mobile screens */
+@media (max-width: 480px) {
+    .typing-text {
+        font-size: 2rem;
+        min-height: 2rem; /* Further reduce minimum height for smaller screens */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    .cursor {
+        font-size: 2rem;
+        height: 2rem;
+    }
+}
